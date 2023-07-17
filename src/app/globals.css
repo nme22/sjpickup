@@ -3,14 +3,33 @@
 @tailwind utilities;
 
 body {
-   background: radial-gradient(indigo, violet, lightsalmon);
+   background: linear-gradient(
+      rgb(224, 220, 218),
+      rgb(52, 178, 241),
+      rgb(55, 5, 236)
+   );
+   border-radius: 1rem;
+   box-shadow: 0 0 2rem rgba(91, 236, 241, 0.972);
+   margin: 2rem auto;
+   max-width: 70rem;
+
+   width: 100%;
 }
 
 main {
    border-radius: 1rem;
-   box-shadow: 0 0 3rem rgba(91, 236, 241, 0.972);
    margin: 2rem auto;
-   max-width: 70rem;
+   padding: 1.5rem;
+   max-width: 100%;
+   max-height: 100%;
+}
 
-   width: 95%;
+button {
+   background: rgb(245, 245, 245);
+   border-radius: 0.5rem;
+   box-shadow: 0 0 2rem rgba(91, 236, 241, 0.972);
+   color: rgb(14, 13, 13);
+   font-size: 1.5rem;
+   margin: 1rem;
+   padding: 0.5rem 1rem;
 }

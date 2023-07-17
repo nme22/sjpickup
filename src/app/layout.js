@@ -1,5 +1,6 @@
 import 'src/app/globals.css';
-import Navbar from '@/components/Navbar';
+import { ClerkProvider } from '@clerk/nextjs';
+import Navbar from '/components/Navbar';
 
 export const metadata = {
    title: 'sjpickup',
@@ -8,9 +9,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
    return (
-      <main lang="en">
+      <ClerkProvider>
          <Navbar />
-         <body className="">{children}</body>
-      </main>
+         <main lang="en">
+            <body className="">{children}</body>
+         </main>
+      </ClerkProvider>
    );
 }
